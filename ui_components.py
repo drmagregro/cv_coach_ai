@@ -164,7 +164,8 @@ def inject_css():
 def render_header():
     st.markdown("""
 <div class="main-header">
-    <h2>Analysez, améliorez et reformulez vos documents professionnels en quelques secondes.</h2>
+    <h1>CourdiCV Lab</h1>
+    <h3>Analysez, améliorez et reformulez vos documents professionnels en quelques secondes.</h3>
 </div>
 """, unsafe_allow_html=True)
 
