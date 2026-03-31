@@ -10,8 +10,9 @@ from cv_builder import call_groq_ats, generate_cv_docx, generate_cv_pdf
 from ui_components import inject_css, render_header, render_empty_state, render_score, render_footer
 
 # ─── Chargement de la clé API ─────────────────────────────────────────────────
+
 load_dotenv()
-cle_env = os.getenv("GROQ_API_KEY")
+cle_env = os.getenv("GROQ_API_KEY") or st.secrets.get("GROQ_API_KEY", None)
 
 # ─── Configuration ────────────────────────────────────────────────────────────
 st.set_page_config(
